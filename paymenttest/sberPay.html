@@ -28,6 +28,12 @@
             function orderNewTest() {
                 window.location.replace("petrovich://petrovich.ru/order/37c5d3d7-2023-4c12-ad6d-4e3a7cee2bbb/?orderId=")
             }
+            function cardPaymentRedirect() {
+                window.location.replace("https://petrovich.ru/order/37c5d3d7-2023-4c12-ad6d-4e3a7cee2bbb/72e29f6167604da10d28ad61ec0afa88/?orderId=123")
+            }
+            function sberPayPaymentRedirect() {
+                window.location.replace("petrovich://petrovich.ru/order/37c5d3d7-2023-4c12-ad6d-4e3a7cee2bbb/72e29f6167604da10d28ad61ec0afa88/?orderId=")
+            }
           </script>
     </head>
     <body>
@@ -41,5 +47,7 @@
         <input type="button" value="К заказу (https)" onclick="orderReplaceHttps()">
         <input type="button" value="К заказу (оригинальная ссылка)" onclick="orderOriginal()">
         <input type="button" value="К заказу (новый тест)" onclick="orderNewTest()">
+        <input type="button" value="К заказу после оплаты картой" onclick="cardPaymentRedirect()">
+        <input type="button" value="К заказу после оплаты SberPay" onclick="sberPayPaymentRedirect()">
     </body>
 </html>

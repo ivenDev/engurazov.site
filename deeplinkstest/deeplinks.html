@@ -2,56 +2,15 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>Тест оплат</title>
+        <title>Тест deeplinks</title>
         <script>
-            function card() {
-                window.location.href="https://petrovich.ru?orderId=transaction-id-1234&lang=ru";
-            }
-            function sberpay() {
-                window.location.replace("sberpay://transaction-id-1234");
-            }
-            function confirmation() {
-                window.location.replace("https://petrovich.ru/pay/result/87643840-4532-4625-a549-514694924ee1/?orderId=3e1483c1-462f-7892-a872-478600002d8e&lang=ru")
-            }
-            function orderHref() {
-                window.location.href = "petrovich://mshurkin.github.io/order/38092ed4-9421-419f-8cad-87b2919efa56/72e29f6167604da10d28ad61ec0afa88/"
-            }
-            function orderReplace() {
-                window.location.replace("petrovich://mshurkin.github.io/order/38092ed4-9421-419f-8cad-87b2919efa56/72e29f6167604da10d28ad61ec0afa88/")
-            }
-            function orderReplaceHttps() {
-                window.location.replace("https://mshurkin.github.io/order/38092ed4-9421-419f-8cad-87b2919efa56/72e29f6167604da10d28ad61ec0afa88/")
-            }
-            function orderOriginal() {
-                window.location.replace("petrovich://petrovich.ru/order/38092ed4-9421-419f-8cad-87b2919efa56/72e29f6167604da10d28ad61ec0afa88/")
-            }
-            function orderNewTest() {
-                window.location.replace("petrovich://petrovich.ru/order/37c5d3d7-2023-4c12-ad6d-4e3a7cee2bbb/?orderId=")
-            }
-            function cardPaymentRedirect() {
-                window.location.replace("https://petrovich.ru/order/37c5d3d7-2023-4c12-ad6d-4e3a7cee2bbb/72e29f6167604da10d28ad61ec0afa88/?orderId=123")
-            }
-            function sberPayPaymentRedirect() {
-                window.location.replace("petrovich://petrovich.ru/order/37c5d3d7-2023-4c12-ad6d-4e3a7cee2bbb/72e29f6167604da10d28ad61ec0afa88/?orderId=")
-            }
-            function testSchemaLink() {
-                window.location.replace("petrovich://google.com")
+            function category() {
+                window.location.href="https://petrovich.ru/catalog/285396370/";
             }
           </script>
     </head>
     <body>
-        <h1>SberPay test</h1>
-        
-<!--         <input type="button" value="Оплата по карте" onclick="card()">
-        <input type="button" value="SberPay" onclick="sberpay()">
-        <input type="button" value="Подтверждение" onclick="confirmation()">
-        <input type="button" value="К заказу (href)" onclick="orderHref()">
-        <input type="button" value="К заказу (replace)" onclick="orderReplace()">
-        <input type="button" value="К заказу (https)" onclick="orderReplaceHttps()">
-        <input type="button" value="К заказу (оригинальная ссылка)" onclick="orderOriginal()">
-        <input type="button" value="К заказу (новый тест)" onclick="orderNewTest()"> -->
-        <input type="button" value="К заказу после оплаты картой" onclick="cardPaymentRedirect()">
-        <input type="button" value="К заказу после оплаты SberPay" onclick="sberPayPaymentRedirect()">
-        <input type="button" value="Тест открытия ссылки со схемой petrovich" onclick="testSchemaLink()">
+        <h1>Deeplinks TEST</h1>
+        <input type="button" value="Категория" onclick="category()">
     </body>
 </html>
